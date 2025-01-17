@@ -8,8 +8,8 @@ async function bootstrap() {
   app.enableCors();
 
   const config = new DocumentBuilder()
-    .setTitle('Your API')
-    .setDescription('API Description')
+    .setTitle('REVNA API')
+    .setDescription('All Endpoints For Managing A User')
     .setVersion('1.0')
     .build();
 

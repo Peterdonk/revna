@@ -18,8 +18,8 @@ Before you begin, ensure you have the following installed:
 
 ```
 revna-user-management/
-├── frontend/          # Angular frontend application
-└── backend/           # NestJS backend application
+├── front-end-angular/          # Angular frontend application
+└── backend-nest-js/           # NestJS backend application
 ```
 
 ## Frontend Setup (Angular)
