@@ -102,6 +102,14 @@ Once the backend server is running, you can access the Swagger API documentation
 http://localhost:3000/api
 ```
 
+
+### Previews
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/0b5fc854-f3b2-4810-bc1f-4eb77d4c8061" />
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/48e94265-b093-4af9-be80-3a492ac0c352" />
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/086e6442-a1a2-46fd-9013-bc8622238148" />
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/4c22a55f-0398-4dcc-9379-be2218c69021" />
+
+
 ## Deployment
 
 ### Frontend Deployment
