@@ -1,5 +1,5 @@
 <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity"
-     (click)="close.emit()">
+     (click)="closeOrCancel()">
   <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
     <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
          (click)="$event.stopPropagation()">
@@ -8,7 +8,7 @@
       <div class="absolute right-0 top-0 pr-4 pt-4 block">
         <button
           type="button"
-          (click)="close.emit()"
+          (click)="closeOrCancel()"
           class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
           <span class="sr-only">Close</span>
@@ -121,8 +121,8 @@
             <!-- Form Actions -->
             <div class="mt-8 flex justify-end gap-x-3">
               <button
+                (click)="closeOrCancel()"
                 type="button"
-                (click)="close.emit()"
                 class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
               >
                 Cancel

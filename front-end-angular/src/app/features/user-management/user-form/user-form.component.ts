@@ -5,7 +5,7 @@ import { CommonModule, NgIf } from '@angular/common';
 import {MatFormField, MatLabel} from '@angular/material/form-field';
 import {MatOption, MatSelect} from '@angular/material/select';
 import {UserService} from '../service/user.service';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute, Router, RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-user-form',
@@ -14,7 +14,8 @@ import {ActivatedRoute, Router} from '@angular/router';
     CommonModule,
     MatFormField,
     MatSelect,
-    MatOption
+    MatOption,
+    RouterLink
   ],
   templateUrl: './user-form.component.html',
   standalone: true,
@@ -28,7 +29,6 @@ export class UserFormComponent {
   userId = signal<string>('')
   user = input<User | null>()
   save = output<User>();
-  close = output()
 
   permissionsList = signal(['Read', 'Write', 'Delete', 'Execute']);
 
@@ -54,6 +54,10 @@ export class UserFormComponent {
         this.loadUserDetails();
       }
     });
+  }
+
+  closeOrCancel():void{
+    this.router.navigate(['/']);
   }
 
 
@@ -102,4 +106,6 @@ export class UserFormComponent {
 
     }
   }
+
+  protected readonly close = close;
 }
