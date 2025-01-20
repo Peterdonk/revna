@@ -1,4 +1,10 @@
-import { IsString, IsEmail, IsArray, IsBoolean, IsOptional } from 'class-validator';
+import {
+  IsString,
+  IsEmail,
+  IsArray,
+  IsBoolean,
+  IsOptional,
+} from '@nestjs/class-validator';
 
 export class CreateUserDto {
   @IsString()
@@ -18,4 +24,3 @@ export class CreateUserDto {
   @IsOptional()
   active?: boolean = true;
 }
-

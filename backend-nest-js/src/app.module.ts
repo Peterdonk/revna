@@ -15,7 +15,7 @@ import { UsersModule } from './users/users.module';
       entities: [User],
       synchronize: true, // Set to false in production
     }),
-    UsersModule
+    UsersModule,
   ],
 })
 export class AppModule {}
